@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Task1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Tiro+Bangla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="form (1).png" type="image/x-icon" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="center text-center">
+      <br />
+      <h2 class="set"><u>FORM</u></h2>
+      <div
+        class="alert alert-danger alert-dismissible fade show container d-none"
+        role="alert"
+        id="check"
+      >
+        <strong>Holy guacamole!</strong> You should check in on some of those
+        fields below.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form>
+        <fieldset>
+          <br />
+          <div class="row">
+            <div class="col-md-4 changes">
+              <label for="source">Select your source :</label>
+            </div>
+
+            <div class="col-md-4 changes">
+              <input
+                type="text"
+                id="source"
+                name="source"
+                class="form-control"
+                value="Google Cloud Storage"
+                disabled
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-4 changes">
+              <label for="pipeline"
+                >Provide a name for pipeline:&nbsp;&nbsp;</label
+              >
+            </div>
+
+            <div class="col-md-4 changes">
+              <input
+                type="text"
+                id="pipeline"
+                name="pipeline"
+                class="form-control"
+                placeholder="e.g., cust_shop_energy_gateway001"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-4 changes">
+              <label for="project">GCS project name:&nbsp;&nbsp;</label>
+            </div>
+
+            <div class="col-md-4 changes">
+              <input
+                type="text"
+                id="project"
+                name="project"
+                class="form-control"
+                placeholder="project-id"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-4 changes">
+              <label for="bucket">GCS bucket name:&nbsp;&nbsp;</label>
+            </div>
+
+            <div class="col-md-4 changes">
+              <input
+                type="text"
+                id="bucket"
+                name="bucket"
+                class="form-control"
+                placeholder="gs://your-bucket"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-4 changes">
+              <label for="storage"
+                >Input Cloud Storage File(s) :&nbsp;&nbsp;</label
+              >
+            </div>
+
+            <div class="col-md-4 changes">
+              <input
+                type="text"
+                id="storage"
+                name="storage"
+                class="form-control"
+                placeholder="GCS location of your files"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-4 changes">
+              <label for="credentials">GCS Credentials :&nbsp;&nbsp;</label>
+            </div>
+
+            <div class="col-md-4 changes">
+              <input
+                type="text"
+                id="credentials"
+                class="form-control"
+                name="credentials"
+                placeholder="*******"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-4 changes">
+              <label for="run">Run Every :&nbsp;&nbsp;</label>
+            </div>
+
+            <div class="col-md-4 changes">
+              <input
+                type="number"
+                id="run"
+                name="for"
+                class="form-control"
+                placeholder="(in minutes)"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <div class="button_center">
+            <button
+              type="button"
+              class="btn btn-info text-center"
+              onClick="validate()"
+            >
+              &nbsp;&nbsp;Create&nbsp;&nbsp;&nbsp;</button
+            >&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-danger text-center">
+              &nbsp;&nbsp;Cancel&nbsp;&nbsp;&nbsp;
+            </button>
+            <br />
+            <br />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <script src="Task1.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
